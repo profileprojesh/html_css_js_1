@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@200&family=Raleway:wght@100;200&display=swap');
+
+@import url('./components/navbar.css');
+@import url('./components/label.css');
+@import url(./components/greeting.css);
+@import url(./components/hero.css);
+@import url(./components/comments.css);
+@import url(./components/footer.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary_color:rgba(37, 114, 214, 0.849);
+    --secondary_color:#e2e0e0;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fade_background{
+    background-color: #f4f4f4;
+}
+

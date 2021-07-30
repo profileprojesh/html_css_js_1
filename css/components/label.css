@@ -1,0 +1,12 @@
+.url_label{
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.url_label p{
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+.current_url{
+    color: forestgreen
+}

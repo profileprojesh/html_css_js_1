@@ -1,0 +1,127 @@
+
+/* adding a burger class */
+.burger{
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 15%;
+    cursor: pointer;
+    z-index: 2;
+
+
+}
+.bar{
+    width: 2rem;
+    background-color: black;
+    height: 2px;
+    margin-top: 8px;
+    /* cursor: pointer; */
+
+}
+
+.burger:first-child{
+    margin-top: 0;
+}
+
+nav{
+    width:100%;
+    background-color:white;
+    position: relative;
+    top: 1rem;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-d-flex{
+    display: flex;
+}
+.logo{
+    width: 30%;
+    margin:.5rem;
+    margin-bottom: 0;
+    padding: 18px;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.navlinks{
+    width: 70%;
+}
+
+.navitems{
+    justify-content: flex-end;
+}
+.navflex{
+    justify-content: space-between;
+}
+.navitems li{
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.navitems li:hover{
+    border-top: 1px solid cornflowerblue;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+
+
+
+@media  only screen and (max-width: 970px){
+
+    .logo{
+        font-size: 1rem;
+    }
+    .navitems li{
+        padding: 1.5rem .5rem;
+        font-size: 0.8rem;
+    }
+}
+
+.active{
+    left: 0 !important;
+    height: fit-content !important
+}
+
+
+@media  only screen and (max-width: 550px){
+
+    .burger{
+        display: block;
+    }
+    .nav-d-flex{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .navlinks{
+        width: 100%;
+    }
+
+    .navitems{
+        position: relative;
+        left: -100rem;
+        height: 1rem;
+        transition: all 0.3s linear;
+    }
+    .navitems li{
+        margin: 0;
+        font-size: 1rem;
+    }
+}
